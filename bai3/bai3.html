@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập So cuoi nam sinh<input id="inp1" type="text">
+<button onclick="tinhCan()">Tinh can</button>
+
+
+<h3 oninput="tinhCan()" id="dis1"></h3>
+<h3 oninput="tinhchi()" id="dis2"></h3>
+
+
+
+<script>
+
+    function tinhCan() {
+        let a = document.getElementById('inp1').value;
+        let thieCan = a % 10;
+        let diaChi = a % 12;
+        console.log(thieCan)
+        switch (thieCan) {
+            case 0:
+                document.getElementById('dis1').innerHTML = 'Canh'
+
+                break;
+            case 1:
+                document.getElementById('dis1').innerHTML = 'Thân'
+
+                break;
+            case 2:
+                document.getElementById('dis1').innerHTML = 'Nhâm'
+
+                break;
+            case 3:
+                document.getElementById('dis1').innerHTML = 'Qúy'
+
+                break;
+            case 4:
+                document.getElementById('dis1').innerHTML = 'Gíap'
+
+                break;
+            case 5:
+                document.getElementById('dis1').innerHTML = 'ẤT'
+
+                break;
+            case 6:
+                document.getElementById('dis1').innerHTML = 'Bính'
+
+                break;
+            case 7:
+                document.getElementById('dis1').innerHTML = 'Đinh'
+
+                break;
+            case 8:
+                document.getElementById('dis1').innerHTML = 'Mậu'
+
+                break;
+            case 9:
+                document.getElementById('dis1').innerHTML = 'KỶ'
+        }
+
+        switch (diaChi) {
+            case 0:
+                document.getElementById('dis2').innerHTML = 'Thân'
+
+                break;
+            case 1:
+                document.getElementById('dis2').innerHTML = 'Dậu'
+
+                break;
+            case 2:
+                document.getElementById('dis2').innerHTML = 'Tuất'
+
+                break;
+            case 3:
+                document.getElementById('dis2').innerHTML = 'Hợi'
+
+                break;
+            case 4:
+                document.getElementById('dis2').innerHTML = 'Tý'
+
+                break;
+            case 5:
+                document.getElementById('dis2').innerHTML = 'Sửu'
+
+                break;
+            case 6:
+                document.getElementById('dis2').innerHTML = 'Dần'
+
+                break;
+            case 7:
+                document.getElementById('dis2').innerHTML = 'Mão'
+
+                break;
+            case 8:
+                document.getElementById('dis2').innerHTML = 'Thìn'
+
+                break;
+            case 9:
+                document.getElementById('dis2').innerHTML = 'Tỵ'
+                break;
+            case 10:
+                document.getElementById('dis2').innerHTML = 'Ngọ'
+                break;
+        }
+    }
+
+
+
+</script>
+</body>
+</html>

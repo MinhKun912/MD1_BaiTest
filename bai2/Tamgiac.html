@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Kiểm Tra tam giác</h1>
+Nhập cạnh A<input id="canh1" type="text">
+Nhập cạnh B<input id="canh2" type="text">
+Nhập cạnh C<input id="canh3" type="text">
+<input onclick="checkTamGiac()" id="check" type="button" value="check">
+<h4 id="dis"></h4>
+
+<script>
+    function checkTamGiac() {
+        let a=+document.getElementById('canh1').value;
+        let b=+document.getElementById('canh2').value;
+        let c=+document.getElementById('canh3').value;
+
+        if (a<b+c && b<a+c && c<b+a && a,b,c>0){
+            if( a*a==b*b+c*c || b*b==a*a+c*c || c*c== a*a+b*b){
+                document.getElementById('dis').innerHTML="Day la tam giac vuong"
+            }
+        }else{
+            document.getElementById('dis').innerHTML="Day khong phai la tam giac vuong"
+        }
+    }
+</script>
+</body>
+</html>
